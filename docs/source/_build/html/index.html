@@ -56,7 +56,11 @@ configuration Pages:</p>
 </ol>
 <div class="section" id="importing-the-master-driver-configuration-store">
 <h3>Importing the Master Driver Configuration Store<a class="headerlink" href="#importing-the-master-driver-configuration-store" title="Permalink to this headline">¶</a></h3>
-<p>At the initial homepage, the user will be prompted to upload the <strong>Master Driver Configuration Store</strong> file. Values within the Master Driver Configuration Store will be parsed to provide options for Campus, Building, Time Zone and Points throughout the application.</p>
+<dl class="simple">
+<dt>At the initial homepage, the user will be prompted to upload the <strong>Master Driver Configuration Store</strong> file.</dt><dd><p>Values within the Master Driver Configuration Store will be parsed to provide options for Campus, Building,
+Time Zone and Points throughout the application.</p>
+</dd>
+</dl>
 <img alt="_images/master_Driver.jpg" src="_images/master_Driver.jpg" />
 <p>Once the user has selected the Master Driver Configuration Store, this homepage will not appear again. However, if the user needs to upload a different Master Driver Configuration Store at any point, this option can be accessed via the Menu icon in the top left of the application.</p>
 <div class="admonition warning">
@@ -82,6 +86,63 @@ platform.driver service.</p>
 </dd>
 </dl>
 </div>
+<div class="section" id="device-configuration">
+<h3>Device Configuration<a class="headerlink" href="#device-configuration" title="Permalink to this headline">¶</a></h3>
+<p><em>Device Configuration</em> is the second page in the list of main configuration pages.
+Once this page is selected, there will be a list of items with dropdown options shown in the center.</p>
+<img alt="_images/device_Confg.jpg" src="_images/device_Confg.jpg" />
+<p>There are 4 different selections with device. When the device drop down is selected, these
+4 items will be shown:</p>
+<img alt="_images/device_Options.jpg" src="_images/device_Options.jpg" />
+<p>After a Device is chosen, there is an option below it to choose the model type.
+The two options will be <em>First Order Zone</em> and <em>Simple</em>. Once an option of these are chosen,
+the option will be stored inside of the JSON code.</p>
+<img alt="_images/simple_First.jpg" src="_images/simple_First.jpg" />
+<p>The last value(s) will be determined based upon the device chosen. This list will go over
+each of the different options the device configurations will go over.</p>
+<p><strong>AHU</strong></p>
+<p><em>AHU</em>’s configuration starts with the <em>Equipment Configuration</em>. There are 3 check boxes shown at
+the start of the config. The first one being <em>Has an economizer</em>, second: <em>Building Chiller</em>, and third:
+<em>Variable Volume</em>.</p>
+<img alt="_images/ahu_Config.jpg" src="_images/ahu_Config.jpg" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each of these check boxes are stored as boolean values. If checked, it will be stored as “True” or 1.
+if unchecked, it will be stored as “false” or 0.</p>
+</div>
+<p>under the check boxes there is 3 items: <em>Economizer limit</em>, <em>Supply Air Set Point</em>, and
+<em>Nominal Zone Set Point</em>. All of these items take in a float based value.</p>
+<p>Model Configuration is another option that will be available upon selection of the
+<em>AHU</em> Device. Inside of <em>Model Configuration</em> there are a selection oh inputs to use.
+<em>cpAir</em>, <em>COP</em>, <em>mDotAir</em>, <em>c0</em>, <em>c1</em>, <em>c2</em>, and <em>c3</em>. These inputs take in a float value as
+well. They will be shown inside the Model configuration of the
+Device configuration JSON code.</p>
+<p><strong>Light</strong></p>
+<p>light is the second selection of the device list inside of <em>Device Configuration</em>.
+Once light is selected, There will be a new dropdown located at the bottom of the items list called
+<em>Rated Power</em>.</p>
+<img alt="_images/light.jpg" src="_images/light.jpg" />
+<p><em>Rated Power</em> Takes in a float value to store.</p>
+<p><strong>RTU</strong></p>
+<p><em>RTU</em> is the third selection of the device list inside of <em>Device Configuration</em>.
+Once <em>RTU</em> is selected, there will be a new selection of items to insert info.</p>
+<img alt="_images/rtu.jpg" src="_images/rtu.jpg" />
+<p>There are 4 options to input float values into.
+<em>Temp DB</em>, <em>Rated Power</em>, <em>On Min</em>, and <em>Off Min</em>.</p>
+<p>Below these inputs is <em>RTU Hourly Parameters File Upload</em>.
+This will allow a file to be uploaded into.</p>
+<img alt="_images/rtu_Hourly.jpg" src="_images/rtu_Hourly.jpg" />
+<p><strong>VAV</strong></p>
+<p><em>VAV</em> is the last item on the device list inside of <em>Device Configuration</em>.
+When <em>VAV</em> is selected, there will be a new selection of items to insert info.</p>
+<img alt="_images/vav.jpg" src="_images/vav.jpg" />
+<p>The VAV will add a new drop down called Terminal Box Type. This will produce a list
+option of <em>CAV</em> or <em>VAV</em> within the dropdown.</p>
+<img alt="_images/dropdown_Vav.jpg" src="_images/dropdown_Vav.jpg" />
+<p>The <em>VAV</em> Device Configuration will also allow an <em>Hourly Parameters File Upload</em>. This will be
+located at the bottom of the page.</p>
+<img alt="_images/vav_File.jpg" src="_images/vav_File.jpg" />
+</div>
 </div>
 </div>
 
@@ -99,6 +160,7 @@ platform.driver service.</p>
 <li><a class="reference internal" href="#tcc-application-configuration">TCC APPLICATION CONFIGURATION</a><ul>
 <li><a class="reference internal" href="#importing-the-master-driver-configuration-store">Importing the Master Driver Configuration Store</a></li>
 <li><a class="reference internal" href="#campus-configuration">Campus Configuration</a></li>
+<li><a class="reference internal" href="#device-configuration">Device Configuration</a></li>
 </ul>
 </li>
 </ul>
