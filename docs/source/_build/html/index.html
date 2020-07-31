@@ -143,6 +143,153 @@ option of <em>CAV</em> or <em>VAV</em> within the dropdown.</p>
 located at the bottom of the page.</p>
 <img alt="_images/vav_File.jpg" src="_images/vav_File.jpg" />
 </div>
+<div class="section" id="agent-configuration">
+<h3>Agent Configuration<a class="headerlink" href="#agent-configuration" title="Permalink to this headline">¶</a></h3>
+<p><em>Agent Configuration</em> is the third page in the TCC config tool.</p>
+<img alt="_images/agent_Config.jpg" src="_images/agent_Config.jpg" />
+<p>Within Agent Configuration, the first prompt will be to add an Agent Name.</p>
+<p>the second prompt within Agent Configuration will be <em>device</em>. This will include
+a dropdown list of items: <em>AHU</em>, <em>Light</em>, <em>RTU</em>, and <em>VAV</em>.</p>
+<p>After selecting an item in devices, there will be different input options
+depending on what is selected.</p>
+<p><strong>AHU</strong></p>
+<img alt="_images/ahu_Agent.jpg" src="_images/ahu_Agent.jpg" />
+<p>When <em>AHU</em> is selected in Agent Configuration
+there will be 2 new options to input into.
+The first one is <em>Supplier Market Name</em>
+and the second one is <em>Consumer Market Name</em>.</p>
+<p><strong>Light</strong></p>
+<img alt="_images/light_Agent.jpg" src="_images/light_Agent.jpg" />
+<p>Light will be the second item in the dropdown. Once <em>light</em> is selected
+there will be a checkbox below the dropdown that says: <em>Enable Actuation On Start</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This checkbox is represented as a boolean value. When checked it will be stored as
+“true” in Json. When unchecked it will be considered “false”.</p>
+</div>
+<p>Below the checkbox, there are 2 more items: <em>Control Interval</em> and <em>Market Name</em>.
+Control interval will take in items of a float value, and Market Name will take in a
+string item.</p>
+<p><strong>RTU</strong></p>
+<img alt="_images/rtu_Agent.jpg" src="_images/rtu_Agent.jpg" />
+<p>RTU is the third item in the dropdown selection list. This item, once selected, will place
+2 checkboxes below the list. The two checkboxes are <em>Enable Actuation On Start</em> and <em>TNS</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These checkboxes are represented as a boolean value. When checked they will be stored as
+“true” in Json. When unchecked it will be considered “false”.</p>
+</div>
+<p>Below the two checkboxes, there is an option called <em>Control Interval</em>. This takes in items of
+a float value.</p>
+<p><strong>VAV</strong></p>
+<img alt="_images/vav_Agent.jpg" src="_images/vav_Agent.jpg" />
+<p><em>VAV</em> is the last item on the list in <em>Devices</em> for the Agent Configuration page.</p>
+<p>Underneath the device list, there is a checkbox to select called <em>Enable Actuation On Start</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This checkbox is represented as a boolean value. When checked it will be stored as
+“true” in Json. When unchecked it will be considered “false”.</p>
+</div>
+<p>Below the checkbox, there are 3 items: <em>Control Interval</em>, <em>Market Name</em>, and <em>Actuation Method</em>.</p>
+<p>within <em>Control Interval</em>, it will take in an item of a float value. <em>Market Name</em> takes
+in a string. <em>Actuation Method</em> has an additional dropdown to choose from.</p>
+<img alt="_images/dropdown_Vav.jpg" src="_images/dropdown_Vav.jpg" />
+</div>
+<div class="section" id="inputs">
+<h3>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h3>
+<p><em>Inputs</em> is the fourth page in the TCC application. Inside of the <em>Inputs</em> page the first thing
+is that, automatically, the first input there is is named <em>Input 0</em>. There is also the option to remove
+or reset this input as well. In the top right of the <em>Inputs</em> page, there is a red button called <em>remove</em>. This
+will remove the selected input that you want to remove.</p>
+<img alt="_images/remove.jpg" src="_images/remove.jpg" />
+<p><strong>Topic</strong></p>
+<p>The first tab you will see in the <em>Inputs</em> page is <em>Topic</em>.</p>
+<img alt="_images/inputs_Page.jpg" src="_images/inputs_Page.jpg" />
+<p>inside of <em>Topic</em> there is a dropdown list. The dropdown list will be determined based upon the
+<em>Main Configuration File</em>. Once an option is chosen, different <em>Points</em> in the Points tab will be available based upon the
+Topic chosen.</p>
+<p><strong>Point</strong></p>
+<p>Points change based on the topic that is selected.
+The points that will be displayed are the ones that are stored
+within that device’s data structure that is passed in the
+platform.driver.store file.</p>
+<p>In the first example the topic will be: <em>VAV213C_SETTINGS</em></p>
+<img alt="_images/points_1.jpg" src="_images/points_1.jpg" />
+<p>The second example the topic will be: <em>METERS</em></p>
+<img alt="_images/points_2.jpg" src="_images/points_2.jpg" />
+<p>Below Points there is the tab: <em>Initial Value</em>.
+This tab will take in a float number as a value.</p>
+<img alt="_images/initial_Value.jpg" src="_images/initial_Value.jpg" />
+<p>The last tab of the <em>Inputs</em> page is <em>Type</em>. Type has an initial dropdown
+which consists of <em>AHU</em>, <em>Light</em>, and <em>VAV</em>. Next to the Type part of the tab
+there is <em>mapped</em>. mapped will have a different selection inside the dropdown
+depending on the <em>Type</em> selected.</p>
+<img alt="_images/type_Inputs.jpg" src="_images/type_Inputs.jpg" />
+</div>
+<div class="section" id="outputs">
+<h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
+<p><strong>Topic</strong></p>
+<p>The <em>Outputs</em> page is the fifth page in the TCC application. Inside of the <em>Outputs</em> page the first thing
+is that, automatically, the first item there is is named <em>Output 0</em>. There is also the option to remove
+or reset this input as well.</p>
+<p>In the top right of the <em>Outputs</em> page, there is a red button called <em>remove</em>. This
+will remove the selected input that you want to remove.</p>
+<img alt="_images/remove.jpg" src="_images/remove.jpg" />
+<p>inside of <em>Topic</em> there is a dropdown list. The dropdown list will be determined based upon the
+<em>Main Configuration File</em>. Once an option is chosen, different <em>Points</em> in the Points tab will be available based upon the
+Topic chosen.</p>
+<p><strong>Point</strong></p>
+<p>Points change based on the topic that is selected.
+The points that will be displayed are the ones that are stored
+within that device’s data structure that is passed in the
+platform.driver.store file.</p>
+<p>Example: Topic is set to <em>VAV120A_SETTINGS</em></p>
+<img alt="_images/point_Output1.jpg" src="_images/point_Output1.jpg" />
+<p>Example: Topic is set to <em>METERS</em></p>
+<img alt="_images/point_Output2.jpg" src="_images/point_Output2.jpg" />
+<p><strong>Type</strong></p>
+<img alt="_images/type_Outputs.jpg" src="_images/type_Outputs.jpg" />
+<p>Depending on the chosen type (<em>AHU</em>, <em>Light</em>, and <em>VAV</em>), the <em>Mapped</em> dropdown
+will defer.</p>
+<p><strong>Output Configuration</strong></p>
+<p>Below the Type option there are various different tabs to configure.</p>
+<img alt="_images/output_Options.jpg" src="_images/output_Options.jpg" />
+<p>Each tab takes in a float value.</p>
+<p><strong>Actuator</strong></p>
+<p>Actuator is displayed below the Output configuration tabs. This is hard coded into the
+application so it cannot be changed.</p>
+<img alt="_images/actuator.jpg" src="_images/actuator.jpg" />
+<p>Below the Actuator, there is a dropdown to chose from. The dropdown will
+give a list between <em>default</em> and <em>None</em>.</p>
+</div>
+<div class="section" id="schedule">
+<h3>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline">¶</a></h3>
+<p>Schedule is the last page of the TCC application.</p>
+<img alt="_images/schedule.jpg" src="_images/schedule.jpg" />
+<p>This page has every day of the week listed (mon-sun).
+on each tab there is a <em>Start</em> time, an <em>always on</em> button, an <em>always off</em>
+button, and an <em>End</em> time.</p>
+<img alt="_images/schedule_Ex.jpg" src="_images/schedule_Ex.jpg" />
+<p><strong>Clock</strong></p>
+<p>When the <em>Start</em> and <em>End</em> tabs are selected, a pop up of a clock will appear
+to select the correct time needed.</p>
+<img alt="_images/clock_Schedule.jpg" src="_images/clock_Schedule.jpg" />
+<p><strong>Always off/on</strong></p>
+<p>The buttons for always off and always on determine which days of the week
+will be <em>Always on</em> or <em>Always off</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When an icon is selected, and another is selected, the previous icon
+will return back to its previous state. They can both be off, but both cannot be on.</p>
+</div>
+<img alt="_images/always_On.jpg" src="_images/always_On.jpg" />
+<img alt="_images/always_Off.jpg" src="_images/always_Off.jpg" />
+<div class="section" id="settings">
+<h4>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h4>
+<p><strong>Dark Mode</strong> : There is an option for this document to be used in dark mode. Click the <em>Contrast</em> icon on the top right corner of the page to toggle this option.</p>
+<img alt="_images/dark_Mode.jpg" src="_images/dark_Mode.jpg" />
+</div>
+</div>
 </div>
 </div>
 
@@ -161,6 +308,13 @@ located at the bottom of the page.</p>
 <li><a class="reference internal" href="#importing-the-master-driver-configuration-store">Importing the Master Driver Configuration Store</a></li>
 <li><a class="reference internal" href="#campus-configuration">Campus Configuration</a></li>
 <li><a class="reference internal" href="#device-configuration">Device Configuration</a></li>
+<li><a class="reference internal" href="#agent-configuration">Agent Configuration</a></li>
+<li><a class="reference internal" href="#inputs">Inputs</a></li>
+<li><a class="reference internal" href="#outputs">Outputs</a></li>
+<li><a class="reference internal" href="#schedule">Schedule</a><ul>
+<li><a class="reference internal" href="#settings">Settings</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

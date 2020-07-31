@@ -151,3 +151,220 @@ located at the bottom of the page.
 
 .. image:: _images/vav_File.jpg
 
+Agent Configuration
+*******************
+
+*Agent Configuration* is the third page in the TCC config tool. 
+
+.. image:: _images/agent_Config.jpg
+
+Within Agent Configuration, the first prompt will be to add an Agent Name.
+
+the second prompt within Agent Configuration will be *device*. This will include
+a dropdown list of items: *AHU*, *Light*, *RTU*, and *VAV*.
+
+After selecting an item in devices, there will be different input options
+depending on what is selected.
+
+**AHU**
+
+.. image:: _images/ahu_Agent.jpg
+
+When *AHU* is selected in Agent Configuration 
+there will be 2 new options to input into. 
+The first one is *Supplier Market Name*
+and the second one is *Consumer Market Name*.
+ 
+**Light**
+
+.. image:: _images/light_Agent.jpg
+
+Light will be the second item in the dropdown. Once *light* is selected 
+there will be a checkbox below the dropdown that says: *Enable Actuation On Start*.
+
+.. Note:: This checkbox is represented as a boolean value. When checked it will be stored as 
+   "true" in Json. When unchecked it will be considered "false".
+
+Below the checkbox, there are 2 more items: *Control Interval* and *Market Name*.
+Control interval will take in items of a float value, and Market Name will take in a 
+string item. 
+
+**RTU**
+
+.. image:: _images/rtu_Agent.jpg
+
+RTU is the third item in the dropdown selection list. This item, once selected, will place
+2 checkboxes below the list. The two checkboxes are *Enable Actuation On Start* and *TNS*. 
+
+.. Note:: These checkboxes are represented as a boolean value. When checked they will be stored as 
+   "true" in Json. When unchecked it will be considered "false".
+
+Below the two checkboxes, there is an option called *Control Interval*. This takes in items of
+a float value.
+
+**VAV**
+
+.. image:: _images/vav_Agent.jpg
+
+*VAV* is the last item on the list in *Devices* for the Agent Configuration page. 
+
+Underneath the device list, there is a checkbox to select called *Enable Actuation On Start*.
+
+.. Note:: This checkbox is represented as a boolean value. When checked it will be stored as 
+   "true" in Json. When unchecked it will be considered "false".
+
+Below the checkbox, there are 3 items: *Control Interval*, *Market Name*, and *Actuation Method*.
+
+within *Control Interval*, it will take in an item of a float value. *Market Name* takes 
+in a string. *Actuation Method* has an additional dropdown to choose from. 
+
+.. image:: _images/dropdown_Vav.jpg
+
+Inputs
+******
+
+*Inputs* is the fourth page in the TCC application. Inside of the *Inputs* page the first thing
+is that, automatically, the first input there is is named *Input 0*. There is also the option to remove
+or reset this input as well. In the top right of the *Inputs* page, there is a red button called *remove*. This 
+will remove the selected input that you want to remove. 
+
+.. image:: _images/remove.jpg
+
+
+**Topic** 
+
+The first tab you will see in the *Inputs* page is *Topic*. 
+
+.. image:: _images/inputs_Page.jpg
+
+inside of *Topic* there is a dropdown list. The dropdown list will be determined based upon the 
+*Main Configuration File*. Once an option is chosen, different *Points* in the Points tab will be available based upon the 
+Topic chosen.
+
+**Point**
+
+Points change based on the topic that is selected. 
+The points that will be displayed are the ones that are stored 
+within that device's data structure that is passed in the 
+platform.driver.store file.
+
+In the first example the topic will be: *VAV213C_SETTINGS*
+
+.. image:: _images/points_1.jpg
+
+The second example the topic will be: *METERS*
+
+.. image:: _images/points_2.jpg
+
+Below Points there is the tab: *Initial Value*. 
+This tab will take in a float number as a value. 
+
+
+.. image:: _images/initial_Value.jpg
+
+The last tab of the *Inputs* page is *Type*. Type has an initial dropdown 
+which consists of *AHU*, *Light*, and *VAV*. Next to the Type part of the tab
+there is *mapped*. mapped will have a different selection inside the dropdown 
+depending on the *Type* selected. 
+
+.. image:: _images/type_Inputs.jpg
+
+Outputs
+*******
+
+
+**Topic**
+
+The *Outputs* page is the fifth page in the TCC application. Inside of the *Outputs* page the first thing
+is that, automatically, the first item there is is named *Output 0*. There is also the option to remove
+or reset this input as well. 
+
+In the top right of the *Outputs* page, there is a red button called *remove*. This 
+will remove the selected input that you want to remove. 
+
+.. image:: _images/remove.jpg
+
+inside of *Topic* there is a dropdown list. The dropdown list will be determined based upon the 
+*Main Configuration File*. Once an option is chosen, different *Points* in the Points tab will be available based upon the 
+Topic chosen.
+
+**Point**
+
+Points change based on the topic that is selected. 
+The points that will be displayed are the ones that are stored 
+within that device's data structure that is passed in the 
+platform.driver.store file.
+
+Example: Topic is set to *VAV120A_SETTINGS*
+
+.. image:: _images/point_Output1.jpg
+
+Example: Topic is set to *METERS*
+
+.. image:: _images/point_Output2.jpg
+
+**Type**
+
+.. image:: _images/type_Outputs.jpg
+
+Depending on the chosen type (*AHU*, *Light*, and *VAV*), the *Mapped* dropdown
+will defer.
+
+**Output Configuration**
+
+Below the Type option there are various different tabs to configure.
+
+.. image:: _images/output_Options.jpg
+
+Each tab takes in a float value. 
+
+**Actuator**
+
+Actuator is displayed below the Output configuration tabs. This is hard coded into the 
+application so it cannot be changed. 
+
+.. image:: _images/actuator.jpg
+
+Below the Actuator, there is a dropdown to chose from. The dropdown will 
+give a list between *default* and *None*. 
+
+Schedule
+********
+
+Schedule is the last page of the TCC application. 
+
+.. image:: _images/schedule.jpg
+
+This page has every day of the week listed (mon-sun).
+on each tab there is a *Start* time, an *always on* button, an *always off*
+button, and an *End* time. 
+
+.. image:: _images/schedule_Ex.jpg
+
+**Clock**
+
+When the *Start* and *End* tabs are selected, a pop up of a clock will appear
+to select the correct time needed. 
+
+.. image:: _images/clock_Schedule.jpg
+
+**Always off/on**
+
+The buttons for always off and always on determine which days of the week
+will be *Always on* or *Always off*. 
+
+.. Note:: When an icon is selected, and another is selected, the previous icon
+   will return back to its previous state. They can both be off, but both cannot be on.
+
+.. image:: _images/always_On.jpg
+
+.. image:: _images/always_Off.jpg
+
+Settings
+--------
+
+**Dark Mode** : There is an option for this document to be used in dark mode. Click the *Contrast* icon on the top right corner of the page to toggle this option. 
+
+.. image:: _images/dark_Mode.jpg
+
+
