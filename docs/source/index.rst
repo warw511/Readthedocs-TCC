@@ -52,20 +52,20 @@ Campus Configuration
 When a Master file has been uploaded, the application will go into the *Campus Configuration*
 page. The first selections that will be shown are the *Campus*, *Building*, and *Time Zone* dropdown's. 
 
-.. image:: _images/campus_Page.JPG
+.. image:: _images/campus_Pg.JPG
 
 .. image:: _images/campus_Config.JPG
 
-**Campus** 
-   The campus name as published by the VOLTTRON
-   platform.driver service. 
+**Campus**
+The campus name as published by the VOLTTRON
+platform.driver service.
 
 **Building**
-   The building name as published by the VOLTTRON
-   platform.driver service.
+The building name as published by the VOLTTRON
+platform.driver service.
 
 **Time Zone**
-   Time Zone has default strings implemented into the program.
+Time Zone has default strings implemented into the program.
 
 Device Configuration
 ********************
@@ -76,13 +76,13 @@ Once this page is selected, there will be a list of items with dropdown options 
 .. image:: _images/device_Confg.JPG
 
 There are 4 different selections with device. When the device drop down is selected, these 
-4 items will be shown: 
+4 items will be shown:
 
 .. image:: _images/device_Options.JPG
 
 After a Device is chosen, there is an option below it to choose the model type. 
 The two options will be *First Order Zone* and *Simple*. Once an option of these are chosen,
-the option will be stored inside of the JSON code. 
+the option will be stored inside of the JSON code.
 
 .. image:: _images/simple_First.JPG
 
@@ -93,12 +93,12 @@ each of the different options the device configurations will go over.
 
 *AHU*'s configuration starts with the *Equipment Configuration*. There are 3 check boxes shown at
 the start of the config. The first one being *Has an economizer*, second: *Building Chiller*, and third: 
-*Variable Volume*. 
+*Variable Volume*.
 
 .. image:: _images/ahu_Config.JPG
 
 .. Note:: Each of these check boxes are stored as boolean values. If checked, it will be stored as "True" or 1. 
-   if unchecked, it will be stored as "false" or 0. 
+   if unchecked, it will be stored as "false" or 0.
 
 under the check boxes there is 3 items: *Economizer limit*, *Supply Air Set Point*, and 
 *Nominal Zone Set Point*. All of these items take in a float based value. 
@@ -106,18 +106,18 @@ under the check boxes there is 3 items: *Economizer limit*, *Supply Air Set Poin
 Model Configuration is another option that will be available upon selection of the 
 *AHU* Device. Inside of *Model Configuration* there are a selection oh inputs to use. 
 *cpAir*, *COP*, *mDotAir*, *c0*, *c1*, *c2*, and *c3*. These inputs take in a float value as 
-well. They will be shown inside the Model configuration of the 
-Device configuration JSON code. 
+well. They will be shown inside the Model configuration of the
+Device configuration JSON code.
 
 **Light**
 
 light is the second selection of the device list inside of *Device Configuration*. 
 Once light is selected, There will be a new dropdown located at the bottom of the items list called
-*Rated Power*. 
+*Rated Power*.
 
 .. image:: _images/light.JPG
 
-*Rated Power* Takes in a float value to store. 
+*Rated Power* Takes in a float value to store.
 
 **RTU**
 
@@ -130,7 +130,7 @@ There are 4 options to input float values into.
 *Temp DB*, *Rated Power*, *On Min*, and *Off Min*.
 
 Below these inputs is *RTU Hourly Parameters File Upload*.
-This will allow a file to be uploaded into. 
+This will allow a file to be uploaded into.
 
 .. image:: _images/rtu_Hourly.JPG
 
@@ -142,19 +142,19 @@ When *VAV* is selected, there will be a new selection of items to insert info.
 .. image:: _images/vav.JPG
 
 The VAV will add a new drop down called Terminal Box Type. This will produce a list
-option of *CAV* or *VAV* within the dropdown. 
+option of *CAV* or *VAV* within the dropdown.
 
 .. image:: _images/dropdown_Vav.JPG
 
 The *VAV* Device Configuration will also allow an *Hourly Parameters File Upload*. This will be 
-located at the bottom of the page. 
+located at the bottom of the page.
 
 .. image:: _images/vav_File.JPG
 
 Agent Configuration
 *******************
 
-*Agent Configuration* is the third page in the TCC config tool. 
+*Agent Configuration* is the third page in the TCC config tool.
 
 .. image:: _images/agent_Config.JPG
 
