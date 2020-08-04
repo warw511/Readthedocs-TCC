@@ -34,8 +34,8 @@ configuration Pages:
 Importing the Master Driver Configuration Store
 ***********************************************
 At the initial homepage, the user will be prompted to upload the **Master Driver Configuration Store** file.
- Values within the Master Driver Configuration Store will be parsed to provide options for Campus, Building, 
- Time Zone and Points throughout the application.
+Values within the Master Driver Configuration Store will be parsed to provide options for Campus, Building, 
+Time Zone and Points throughout the application.
 
 .. image:: _images/master_Driver.JPG
 
@@ -361,7 +361,7 @@ will be *Always on* or *Always off*.
 .. image:: _images/always_Off.JPG
 
 Settings
---------
+********
 
 **Dark Mode** : There is an option for this document to be used in dark mode. Click the *Contrast* icon on the top right corner of the page to toggle this option. 
 
