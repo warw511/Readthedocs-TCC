@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC Web Application: User guide &#8212; TCC userguide 12/31/2020 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="#">TCC userguide 12/31/2020 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">TCC Web Application: User guide</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tcc-web-application-user-guide">
+<h1>TCC Web Application: User guide<a class="headerlink" href="#tcc-web-application-user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tcc-application-configuration">
+<h2>TCC APPLICATION CONFIGURATION<a class="headerlink" href="#tcc-application-configuration" title="Permalink to this headline">¶</a></h2>
+<p><strong>!This doc is a test for creating a user guide. Edit this out when entire doc draft is finished.!</strong></p>
+<p>The TCC application behavior is controlled through these
+configuration Pages:</p>
+<ol class="arabic simple">
+<li><p>The Campus Configuration page</p></li>
+<li><p>The device/criteria configuration page</p></li>
+<li><p>The Agent Configuration page</p></li>
+<li><p>The <em>Inputs</em> page</p></li>
+<li><p>The <em>Outputs</em> page</p></li>
+<li><p>The <em>Schedule</em> page</p></li>
+</ol>
+<div class="section" id="importing-the-master-driver-configuration-store">
+<h3>Importing the Master Driver Configuration Store<a class="headerlink" href="#importing-the-master-driver-configuration-store" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>At the initial homepage, the user will be prompted to upload the <strong>Master Driver Configuration Store</strong> file.</dt><dd><p>Values within the Master Driver Configuration Store will be parsed to provide options for Campus, Building,
+Time Zone and Points throughout the application.</p>
+</dd>
+</dl>
+<img alt="_images/master_Driver.JPG" src="_images/master_Driver.JPG" />
+<p>Once the user has selected the Master Driver Configuration Store, this homepage will not appear again. However, if the user needs to upload a different Master Driver Configuration Store at any point, this option can be accessed via the Menu icon in the top left of the application.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Uploading a new Master Driver Configuration Store will remove all current data in the application.</p>
+</div>
+<img alt="_images/hamburger_Drop.JPG" src="_images/hamburger_Drop.JPG" />
+</div>
+<div class="section" id="campus-configuration">
+<h3>Campus Configuration<a class="headerlink" href="#campus-configuration" title="Permalink to this headline">¶</a></h3>
+<p>When a Master file has been uploaded, the application will go into the <em>Campus Configuration</em>
+page. The first selections that will be shown are the <em>Campus</em>, <em>Building</em>, and <em>Time Zone</em> dropdown’s.</p>
+<img alt="_images/campus_Page.JPG" src="_images/campus_Page.JPG" />
+<img alt="_images/campus_Config.JPG" src="_images/campus_Config.JPG" />
+<dl class="simple">
+<dt><strong>Campus</strong></dt><dd><p>The campus name as published by the VOLTTRON
+platform.driver service.</p>
+</dd>
+<dt><strong>Building</strong></dt><dd><p>The building name as published by the VOLTTRON
+platform.driver service.</p>
+</dd>
+<dt><strong>Time Zone</strong></dt><dd><p>Time Zone has default strings implemented into the program.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="device-configuration">
+<h3>Device Configuration<a class="headerlink" href="#device-configuration" title="Permalink to this headline">¶</a></h3>
+<p><em>Device Configuration</em> is the second page in the list of main configuration pages.
+Once this page is selected, there will be a list of items with dropdown options shown in the center.</p>
+<img alt="_images/device_Confg.JPG" src="_images/device_Confg.JPG" />
+<p>There are 4 different selections with device. When the device drop down is selected, these
+4 items will be shown:</p>
+<img alt="_images/device_Options.JPG" src="_images/device_Options.JPG" />
+<p>After a Device is chosen, there is an option below it to choose the model type.
+The two options will be <em>First Order Zone</em> and <em>Simple</em>. Once an option of these are chosen,
+the option will be stored inside of the JSON code.</p>
+<img alt="_images/simple_First.JPG" src="_images/simple_First.JPG" />
+<p>The last value(s) will be determined based upon the device chosen. This list will go over
+each of the different options the device configurations will go over.</p>
+<p><strong>AHU</strong></p>
+<p><em>AHU</em>’s configuration starts with the <em>Equipment Configuration</em>. There are 3 check boxes shown at
+the start of the config. The first one being <em>Has an economizer</em>, second: <em>Building Chiller</em>, and third:
+<em>Variable Volume</em>.</p>
+<img alt="_images/ahu_Config.JPG" src="_images/ahu_Config.JPG" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each of these check boxes are stored as boolean values. If checked, it will be stored as “True” or 1.
+if unchecked, it will be stored as “false” or 0.</p>
+</div>
+<p>under the check boxes there is 3 items: <em>Economizer limit</em>, <em>Supply Air Set Point</em>, and
+<em>Nominal Zone Set Point</em>. All of these items take in a float based value.</p>
+<p>Model Configuration is another option that will be available upon selection of the
+<em>AHU</em> Device. Inside of <em>Model Configuration</em> there are a selection oh inputs to use.
+<em>cpAir</em>, <em>COP</em>, <em>mDotAir</em>, <em>c0</em>, <em>c1</em>, <em>c2</em>, and <em>c3</em>. These inputs take in a float value as
+well. They will be shown inside the Model configuration of the
+Device configuration JSON code.</p>
+<p><strong>Light</strong></p>
+<p>light is the second selection of the device list inside of <em>Device Configuration</em>.
+Once light is selected, There will be a new dropdown located at the bottom of the items list called
+<em>Rated Power</em>.</p>
+<img alt="_images/light.JPG" src="_images/light.JPG" />
+<p><em>Rated Power</em> Takes in a float value to store.</p>
+<p><strong>RTU</strong></p>
+<p><em>RTU</em> is the third selection of the device list inside of <em>Device Configuration</em>.
+Once <em>RTU</em> is selected, there will be a new selection of items to insert info.</p>
+<img alt="_images/rtu.JPG" src="_images/rtu.JPG" />
+<p>There are 4 options to input float values into.
+<em>Temp DB</em>, <em>Rated Power</em>, <em>On Min</em>, and <em>Off Min</em>.</p>
+<p>Below these inputs is <em>RTU Hourly Parameters File Upload</em>.
+This will allow a file to be uploaded into.</p>
+<img alt="_images/rtu_Hourly.JPG" src="_images/rtu_Hourly.JPG" />
+<p><strong>VAV</strong></p>
+<p><em>VAV</em> is the last item on the device list inside of <em>Device Configuration</em>.
+When <em>VAV</em> is selected, there will be a new selection of items to insert info.</p>
+<img alt="_images/vav.JPG" src="_images/vav.JPG" />
+<p>The VAV will add a new drop down called Terminal Box Type. This will produce a list
+option of <em>CAV</em> or <em>VAV</em> within the dropdown.</p>
+<img alt="_images/dropdown_Vav.JPG" src="_images/dropdown_Vav.JPG" />
+<p>The <em>VAV</em> Device Configuration will also allow an <em>Hourly Parameters File Upload</em>. This will be
+located at the bottom of the page.</p>
+<img alt="_images/vav_File.JPG" src="_images/vav_File.JPG" />
+</div>
+<div class="section" id="agent-configuration">
+<h3>Agent Configuration<a class="headerlink" href="#agent-configuration" title="Permalink to this headline">¶</a></h3>
+<p><em>Agent Configuration</em> is the third page in the TCC config tool.</p>
+<img alt="_images/agent_Config.JPG" src="_images/agent_Config.JPG" />
+<p>Within Agent Configuration, the first prompt will be to add an Agent Name.</p>
+<p>the second prompt within Agent Configuration will be <em>device</em>. This will include
+a dropdown list of items: <em>AHU</em>, <em>Light</em>, <em>RTU</em>, and <em>VAV</em>.</p>
+<p>After selecting an item in devices, there will be different input options
+depending on what is selected.</p>
+<p><strong>AHU</strong></p>
+<img alt="_images/ahu_Agent.JPG" src="_images/ahu_Agent.JPG" />
+<p>When <em>AHU</em> is selected in Agent Configuration
+there will be 2 new options to input into.
+The first one is <em>Supplier Market Name</em>
+and the second one is <em>Consumer Market Name</em>.</p>
+<p><strong>Light</strong></p>
+<img alt="_images/light_Agent.JPG" src="_images/light_Agent.JPG" />
+<p>Light will be the second item in the dropdown. Once <em>light</em> is selected
+there will be a checkbox below the dropdown that says: <em>Enable Actuation On Start</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This checkbox is represented as a boolean value. When checked it will be stored as
+“true” in Json. When unchecked it will be considered “false”.</p>
+</div>
+<p>Below the checkbox, there are 2 more items: <em>Control Interval</em> and <em>Market Name</em>.
+Control interval will take in items of a float value, and Market Name will take in a
+string item.</p>
+<p><strong>RTU</strong></p>
+<img alt="_images/rtu_Agent.JPG" src="_images/rtu_Agent.JPG" />
+<p>RTU is the third item in the dropdown selection list. This item, once selected, will place
+2 checkboxes below the list. The two checkboxes are <em>Enable Actuation On Start</em> and <em>TNS</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These checkboxes are represented as a boolean value. When checked they will be stored as
+“true” in Json. When unchecked it will be considered “false”.</p>
+</div>
+<p>Below the two checkboxes, there is an option called <em>Control Interval</em>. This takes in items of
+a float value.</p>
+<p><strong>VAV</strong></p>
+<img alt="_images/vav_Agent.JPG" src="_images/vav_Agent.JPG" />
+<p><em>VAV</em> is the last item on the list in <em>Devices</em> for the Agent Configuration page.</p>
+<p>Underneath the device list, there is a checkbox to select called <em>Enable Actuation On Start</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This checkbox is represented as a boolean value. When checked it will be stored as
+“true” in Json. When unchecked it will be considered “false”.</p>
+</div>
+<p>Below the checkbox, there are 3 items: <em>Control Interval</em>, <em>Market Name</em>, and <em>Actuation Method</em>.</p>
+<p>within <em>Control Interval</em>, it will take in an item of a float value. <em>Market Name</em> takes
+in a string. <em>Actuation Method</em> has an additional dropdown to choose from.</p>
+<img alt="_images/dropdown_Vav.JPG" src="_images/dropdown_Vav.JPG" />
+</div>
+<div class="section" id="inputs">
+<h3>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h3>
+<p><em>Inputs</em> is the fourth page in the TCC application. Inside of the <em>Inputs</em> page the first thing
+is that, automatically, the first input there is is named <em>Input 0</em>. There is also the option to remove
+or reset this input as well. In the top right of the <em>Inputs</em> page, there is a red button called <em>remove</em>. This
+will remove the selected input that you want to remove.</p>
+<img alt="_images/remove.JPG" src="_images/remove.JPG" />
+<p><strong>Topic</strong></p>
+<p>The first tab you will see in the <em>Inputs</em> page is <em>Topic</em>.</p>
+<img alt="_images/inputs_Page.JPG" src="_images/inputs_Page.JPG" />
+<p>inside of <em>Topic</em> there is a dropdown list. The dropdown list will be determined based upon the
+<em>Main Configuration File</em>. Once an option is chosen, different <em>Points</em> in the Points tab will be available based upon the
+Topic chosen.</p>
+<p><strong>Point</strong></p>
+<p>Points change based on the topic that is selected.
+The points that will be displayed are the ones that are stored
+within that device’s data structure that is passed in the
+platform.driver.store file.</p>
+<p>In the first example the topic will be: <em>VAV213C_SETTINGS</em></p>
+<img alt="_images/points_1.JPG" src="_images/points_1.JPG" />
+<p>The second example the topic will be: <em>METERS</em></p>
+<img alt="_images/points_2.JPG" src="_images/points_2.JPG" />
+<p>Below Points there is the tab: <em>Initial Value</em>.
+This tab will take in a float number as a value.</p>
+<img alt="_images/initial_Value.JPG" src="_images/initial_Value.JPG" />
+<p>The last tab of the <em>Inputs</em> page is <em>Type</em>. Type has an initial dropdown
+which consists of <em>AHU</em>, <em>Light</em>, and <em>VAV</em>. Next to the Type part of the tab
+there is <em>mapped</em>. mapped will have a different selection inside the dropdown
+depending on the <em>Type</em> selected.</p>
+<img alt="_images/type_Inputs.JPG" src="_images/type_Inputs.JPG" />
+</div>
+<div class="section" id="outputs">
+<h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
+<p><strong>Topic</strong></p>
+<p>The <em>Outputs</em> page is the fifth page in the TCC application. Inside of the <em>Outputs</em> page the first thing
+is that, automatically, the first item there is is named <em>Output 0</em>. There is also the option to remove
+or reset this input as well.</p>
+<p>In the top right of the <em>Outputs</em> page, there is a red button called <em>remove</em>. This
+will remove the selected input that you want to remove.</p>
+<img alt="_images/remove.JPG" src="_images/remove.JPG" />
+<p>inside of <em>Topic</em> there is a dropdown list. The dropdown list will be determined based upon the
+<em>Main Configuration File</em>. Once an option is chosen, different <em>Points</em> in the Points tab will be available based upon the
+Topic chosen.</p>
+<p><strong>Point</strong></p>
+<p>Points change based on the topic that is selected.
+The points that will be displayed are the ones that are stored
+within that device’s data structure that is passed in the
+platform.driver.store file.</p>
+<p>Example: Topic is set to <em>VAV120A_SETTINGS</em></p>
+<img alt="_images/point_Output1.JPG" src="_images/point_Output1.JPG" />
+<p>Example: Topic is set to <em>METERS</em></p>
+<img alt="_images/point_Output2.JPG" src="_images/point_Output2.JPG" />
+<p><strong>Type</strong></p>
+<img alt="_images/type_Outputs.JPG" src="_images/type_Outputs.JPG" />
+<p>Depending on the chosen type (<em>AHU</em>, <em>Light</em>, and <em>VAV</em>), the <em>Mapped</em> dropdown
+will defer.</p>
+<p><strong>Output Configuration</strong></p>
+<p>Below the Type option there are various different tabs to configure.</p>
+<img alt="_images/output_Options.JPG" src="_images/output_Options.JPG" />
+<p>Each tab takes in a float value.</p>
+<p><strong>Actuator</strong></p>
+<p>Actuator is displayed below the Output configuration tabs. This is hard coded into the
+application so it cannot be changed.</p>
+<img alt="_images/actuator.JPG" src="_images/actuator.JPG" />
+<p>Below the Actuator, there is a dropdown to chose from. The dropdown will
+give a list between <em>default</em> and <em>None</em>.</p>
+</div>
+<div class="section" id="schedule">
+<h3>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline">¶</a></h3>
+<p>Schedule is the last page of the TCC application.</p>
+<img alt="_images/schedule.JPG" src="_images/schedule.JPG" />
+<p>This page has every day of the week listed (mon-sun).
+on each tab there is a <em>Start</em> time, an <em>always on</em> button, an <em>always off</em>
+button, and an <em>End</em> time.</p>
+<img alt="_images/schedule_Ex.JPG" src="_images/schedule_Ex.JPG" />
+<p><strong>Clock</strong></p>
+<p>When the <em>Start</em> and <em>End</em> tabs are selected, a pop up of a clock will appear
+to select the correct time needed.</p>
+<img alt="_images/clock_Schedule.JPG" src="_images/clock_Schedule.JPG" />
+<p><strong>Always off/on</strong></p>
+<p>The buttons for always off and always on determine which days of the week
+will be <em>Always on</em> or <em>Always off</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When an icon is selected, and another is selected, the previous icon
+will return back to its previous state. They can both be off, but both cannot be on.</p>
+</div>
+<img alt="_images/always_On.JPG" src="_images/always_On.JPG" />
+<img alt="_images/always_Off.JPG" src="_images/always_Off.JPG" />
+<div class="section" id="settings">
+<h4>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h4>
+<p><strong>Dark Mode</strong> : There is an option for this document to be used in dark mode. Click the <em>Contrast</em> icon on the top right corner of the page to toggle this option.</p>
+<img alt="_images/dark_Mode.JPG" src="_images/dark_Mode.JPG" />
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">TCC Web Application: User guide</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#tcc-application-configuration">TCC APPLICATION CONFIGURATION</a><ul>
+<li><a class="reference internal" href="#importing-the-master-driver-configuration-store">Importing the Master Driver Configuration Store</a></li>
+<li><a class="reference internal" href="#campus-configuration">Campus Configuration</a></li>
+<li><a class="reference internal" href="#device-configuration">Device Configuration</a></li>
+<li><a class="reference internal" href="#agent-configuration">Agent Configuration</a></li>
+<li><a class="reference internal" href="#inputs">Inputs</a></li>
+<li><a class="reference internal" href="#outputs">Outputs</a></li>
+<li><a class="reference internal" href="#schedule">Schedule</a><ul>
+<li><a class="reference internal" href="#settings">Settings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="#">TCC userguide 12/31/2020 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">TCC Web Application: User guide</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Caleb Warwick.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.0.
+    </div>
+  </body>
+</html>
