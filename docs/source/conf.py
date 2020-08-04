@@ -18,11 +18,10 @@
 # -- Project information -----------------------------------------------------
 
 project = 'TCC userguide'
-copyright = '2020, Caleb Warwick'
 author = 'Caleb Warwick'
 
 # The full version, including alpha/beta/rc tags
-release = '12/31/2020'
+
 
 
 # -- General configuration ---------------------------------------------------

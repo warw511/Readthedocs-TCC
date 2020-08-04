@@ -24,7 +24,7 @@ The TCC application behavior is controlled through these
 configuration Pages:
 
 1. The Campus Configuration page
-2. The device/criteria configuration page
+2. The Device/Criteria configuration page
 3. The Agent Configuration page
 4. The *Inputs* page
 5. The *Outputs* page
@@ -34,17 +34,23 @@ configuration Pages:
 Importing the Master Driver Configuration Store
 ***********************************************
 At the initial homepage, the user will be prompted to upload the **Master Driver Configuration Store** file.
-Values within the Master Driver Configuration Store will be parsed to provide options for Campus, Building, 
+Values within the Master Driver Configuration Store will be parsed to provide options for Campus, Building,
 Time Zone and Points throughout the application.
 
 .. image:: _images/master_Driver.JPG
 
-
 Once the user has selected the Master Driver Configuration Store, this homepage will not appear again. However, if the user needs to upload a different Master Driver Configuration Store at any point, this option can be accessed via the Menu icon in the top left of the application.
+
+if a new file needs to be uploaded to the application, in the top left corner of the screen there will be a *hamburger dropdown* icon.
+
+.. image:: _images/hamburger_Drop.JPG
+
+Once this item is selected, there will be two options to choose from. 
+
+.. image:: _images/hamburger_Button.JPG
 
 .. Warning:: Uploading a new Master Driver Configuration Store will remove all current data in the application.
 
-.. image:: _images/hamburger_Drop.JPG
 
 Campus Configuration
 ********************
@@ -57,14 +63,17 @@ page. The first selections that will be shown are the *Campus*, *Building*, and 
 .. image:: _images/campus_Config.JPG
 
 **Campus**
+
 The campus name as published by the VOLTTRON
 platform.driver service.
 
 **Building**
+
 The building name as published by the VOLTTRON
 platform.driver service.
 
 **Time Zone**
+
 Time Zone has default strings implemented into the program.
 
 Device Configuration
@@ -156,7 +165,7 @@ Agent Configuration
 
 *Agent Configuration* is the third page in the TCC config tool.
 
-.. image:: _images/agent_Config.JPG
+.. image:: _images/agent_Ahu.JPG
 
 Within Agent Configuration, the first prompt will be to add an Agent Name.
 
@@ -170,16 +179,18 @@ depending on what is selected.
 
 .. image:: _images/ahu_Agent.JPG
 
-When *AHU* is selected in Agent Configuration 
-there will be 2 new options to input into. 
+When *AHU* is selected in Agent Configuration
+there will be 2 new options to input into.
 The first one is *Supplier Market Name*
 and the second one is *Consumer Market Name*.
- 
+
+.. image:: _images/ahu_Agent.JPG
+
 **Light**
 
 .. image:: _images/light_Agent.JPG
 
-Light will be the second item in the dropdown. Once *light* is selected 
+Light will be the second item in the dropdown. Once *light* is selected
 there will be a checkbox below the dropdown that says: *Enable Actuation On Start*.
 
 .. Note:: This checkbox is represented as a boolean value. When checked it will be stored as 
@@ -226,14 +237,14 @@ Inputs
 *Inputs* is the fourth page in the TCC application. Inside of the *Inputs* page the first thing
 is that, automatically, the first input there is is named *Input 0*. There is also the option to remove
 or reset this input as well. In the top right of the *Inputs* page, there is a red button called *remove*. This 
-will remove the selected input that you want to remove. 
+will remove the selected input that you want to remove.
 
 .. image:: _images/remove.JPG
 
 
-**Topic** 
+**Topic**
 
-The first tab you will see in the *Inputs* page is *Topic*. 
+The first tab you will see in the *Inputs* page is *Topic*.
 
 .. image:: _images/inputs_Page.JPG
 
@@ -243,9 +254,9 @@ Topic chosen.
 
 **Point**
 
-Points change based on the topic that is selected. 
-The points that will be displayed are the ones that are stored 
-within that device's data structure that is passed in the 
+Points change based on the topic that is selected.
+The points that will be displayed are the ones that are stored
+within that device's data structure that is passed in the
 platform.driver.store file.
 
 In the first example the topic will be: *VAV213C_SETTINGS*
@@ -256,8 +267,8 @@ The second example the topic will be: *METERS*
 
 .. image:: _images/points_2.JPG
 
-Below Points there is the tab: *Initial Value*. 
-This tab will take in a float number as a value. 
+Below Points there is the tab: *Initial Value*.
+This tab will take in a float number as a value.
 
 
 .. image:: _images/initial_Value.JPG
@@ -265,7 +276,7 @@ This tab will take in a float number as a value.
 The last tab of the *Inputs* page is *Type*. Type has an initial dropdown 
 which consists of *AHU*, *Light*, and *VAV*. Next to the Type part of the tab
 there is *mapped*. mapped will have a different selection inside the dropdown 
-depending on the *Type* selected. 
+depending on the *Type* selected.
 
 .. image:: _images/type_Inputs.JPG
 
@@ -277,10 +288,10 @@ Outputs
 
 The *Outputs* page is the fifth page in the TCC application. Inside of the *Outputs* page the first thing
 is that, automatically, the first item there is is named *Output 0*. There is also the option to remove
-or reset this input as well. 
+or reset this input as well.
 
 In the top right of the *Outputs* page, there is a red button called *remove*. This 
-will remove the selected input that you want to remove. 
+will remove the selected input that you want to remove.
 
 .. image:: _images/remove.JPG
 
@@ -290,9 +301,9 @@ Topic chosen.
 
 **Point**
 
-Points change based on the topic that is selected. 
-The points that will be displayed are the ones that are stored 
-within that device's data structure that is passed in the 
+Points change based on the topic that is selected.
+The points that will be displayed are the ones that are stored
+within that device's data structure that is passed in the
 platform.driver.store file.
 
 Example: Topic is set to *VAV120A_SETTINGS*
@@ -316,42 +327,42 @@ Below the Type option there are various different tabs to configure.
 
 .. image:: _images/output_Options.JPG
 
-Each tab takes in a float value. 
+Each tab takes in a float value.
 
 **Actuator**
 
 Actuator is displayed below the Output configuration tabs. This is hard coded into the 
-application so it cannot be changed. 
+application so it cannot be changed.
 
 .. image:: _images/actuator.JPG
 
 Below the Actuator, there is a dropdown to chose from. The dropdown will 
-give a list between *default* and *None*. 
+give a list between *default* and *None*.
 
 Schedule
 ********
 
-Schedule is the last page of the TCC application. 
+Schedule is the last page of the TCC application.
 
 .. image:: _images/schedule.JPG
 
 This page has every day of the week listed (mon-sun).
 on each tab there is a *Start* time, an *always on* button, an *always off*
-button, and an *End* time. 
+button, and an *End* time.
 
 .. image:: _images/schedule_Ex.JPG
 
 **Clock**
 
 When the *Start* and *End* tabs are selected, a pop up of a clock will appear
-to select the correct time needed. 
+to select the correct time needed.
 
 .. image:: _images/clock_Schedule.JPG
 
 **Always off/on**
 
 The buttons for always off and always on determine which days of the week
-will be *Always on* or *Always off*. 
+will be *Always on* or *Always off*.
 
 .. Note:: When an icon is selected, and another is selected, the previous icon
    will return back to its previous state. They can both be off, but both cannot be on.
