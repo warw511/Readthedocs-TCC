@@ -4,19 +4,19 @@
    contain the root `toctree` directive.
 
 ###############################
-TCC Web Application: User guide
+TCC Web Application: User Guide
 ###############################
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   
 
 ************
 Introduction
 ************
 
 *****************************
-TCC APPLICATION CONFIGURATION
+TCC Application Configuration
 *****************************
 **!This doc is a test for creating a user guide. Edit this out when entire doc draft is finished.!**
 
@@ -35,13 +35,13 @@ Importing the Master Driver Configuration Store
 ***********************************************
 At the initial homepage, the user will be prompted to upload the **Master Driver Configuration Store** file.
 Values within the Master Driver Configuration Store will be parsed to provide options for Campus, Building,
-Time Zone and Points throughout the application.
+Devices, Topics, and Points throughout the application.
 
 .. image:: _images/master_Driver.JPG
 
 Once the user has selected the Master Driver Configuration Store, this homepage will not appear again. However, if the user needs to upload a different Master Driver Configuration Store at any point, this option can be accessed via the Menu icon in the top left of the application.
 
-if a new file needs to be uploaded to the application, in the top left corner of the screen there will be a *hamburger dropdown* icon.
+If a new file needs to be uploaded to the application, in the top left corner of the screen there will be a *hamburger dropdown* icon.
 
 .. image:: _images/hamburger_Drop.JPG
 
@@ -56,7 +56,7 @@ Campus Configuration
 ********************
 
 When a Master file has been uploaded, the application will go into the *Campus Configuration*
-page. The first selections that will be shown are the *Campus*, *Building*, and *Time Zone* dropdown's. 
+page. The first selections that will be shown are the *Campus*, *Building*, and *Time Zone* dropdowns. 
 
 .. image:: _images/campus_Pg.JPG
 
@@ -74,13 +74,13 @@ platform.driver service.
 
 **Time Zone**
 
-Time Zone has default strings implemented into the program.
+Time Zone has default options implemented into the program.
 
 Device Configuration
 ********************
 
-*Device Configuration* is the second page in the list of main configuration pages.
-Once this page is selected, there will be a list of items with dropdown options shown in the center. 
+*Device Configuration* is the second page in the list of configuration pages.
+Once this page is selected, there will be a list dropdowns shown in the center. 
 
 .. image:: _images/device_Confg.JPG
 
@@ -100,33 +100,131 @@ each of the different options the device configurations will go over.
 
 **AHU**
 
-*AHU*'s configuration starts with the *Equipment Configuration*. There are 3 check boxes shown at
-the start of the config. The first one being *Has an economizer*, second: *Building Chiller*, and third: 
-*Variable Volume*.
+When *AHU* is selected, new items will appear. These will be *Equipment Configuration* and *Model Configuration*.
 
 .. image:: _images/ahu_Config.JPG
 
-.. Note:: Each of these check boxes are stored as boolean values. If checked, it will be stored as "True" or 1. 
-   if unchecked, it will be stored as "false" or 0.
+**Equipment Configuration:**
 
-under the check boxes there is 3 items: *Economizer limit*, *Supply Air Set Point*, and 
-*Nominal Zone Set Point*. All of these items take in a float based value. 
+Configuration of the *AHU* starts with the *Equipment Configuration*.
+
+.. image:: _images/equip_Config.JPG
+
+.. Note:: Each of these check boxes are stored as boolean values. If checked, it will be stored as "True". 
+   if unchecked, it will be stored as "false".
+
+**Has an Economizer:**
+
+Input is a checkbox inside *Equipment Configuration*.
+
+.. image:: _images/has_Eco.JPG
+
+**Building Chiller**
+
+Input is a checkbox inside *Equipment Configuration*.
+
+.. image:: _images/build_Chill.JPG
+
+**Variable Volume**
+
+Input is a checkbox inside *Equipment configuration*.
+
+.. image:: _images/variable_Vol.JPG
+
+**Economizer Limit**
+
+Item takes in a floating point precision based value. 
+
+.. image:: _images/econ_Limit.JPG
+
+**Supply Air Set Point**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/supply_Set.JPG
+
+**Nominal Zone Set Point**
+
+.. image:: _images/nom_Set.JPG
+
+**Model Configuration**
 
 Model Configuration is another option that will be available upon selection of the 
-*AHU* Device. Inside of *Model Configuration* there are a selection oh inputs to use. 
-*cpAir*, *COP*, *mDotAir*, *c0*, *c1*, *c2*, and *c3*. These inputs take in a float value as 
-well. They will be shown inside the Model configuration of the
-Device configuration JSON code.
+*AHU* Device. Inside of *Model Configuration* there are a selection of inputs to use. 
+*cpAir*, *COP*, *mDotAir*, *c0*, *c1*, *c2*, and *c3*. 
+
+**cpAir**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/nom_Set.JPG
+
+**COP**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/cop.JPG
+
+**mDotAir**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/m_Dot.JPG
+
+**c0**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/c_0.JPG
+
+**c1**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/c_1.JPG
+
+**c2**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/c_2.JPG
+
+**c2**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/c_2.JPG
+
+**c3**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/c_3.JPG
+
+
+``End AHU``
 
 **Light**
 
-light is the second selection of the device list inside of *Device Configuration*. 
-Once light is selected, There will be a new dropdown located at the bottom of the items list called
-*Rated Power*.
+Light is the second selection of the device list inside of *Device Configuration*. 
+*Light* consists of *Model Type* and *Rated Power*.
 
 .. image:: _images/light.JPG
 
-*Rated Power* Takes in a float value to store.
+
+**Model Type** 
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/model_Type.JPG
+
+**Rated Power**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/rated_Power.JPG
+
+``End Light``
 
 **RTU**
 
@@ -135,15 +233,52 @@ Once *RTU* is selected, there will be a new selection of items to insert info.
 
 .. image:: _images/rtu.JPG
 
-There are 4 options to input float values into.
-*Temp DB*, *Rated Power*, *On Min*, and *Off Min*.
+**Temp DB**
 
-Below these inputs is *RTU Hourly Parameters File Upload*.
-This will allow a file to be uploaded into.
+Item takes in a floating point precision based value.
+
+.. image:: _images/temp_Db.JPG
+
+**Rated Power**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/rate_Power.JPG
+
+**On Min**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/on_Min.JPG
+
+**Off Min**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/off_Min.JPG
+
+**RTU Hourly Parameters File Upload**
+
+*RTU Hourly Parameters File Upload* will allow a file to be uploaded into.
 
 .. image:: _images/rtu_Hourly.JPG
 
+.. Warning:: RTU Hourly Parameters File Upload will only read .json or .csv files. 
+
+Once a file is uploaded, the results will be displayed in the json code on the right side of the 
+screen. 
+
+.. image:: _images/hourly_Paramupload.JPG
+
+.. Note:: The example used displays the results of a .json file. 
+
+The items within the file uploaded will be placed in their corresponding areas inside of the json code 
+on the right. 
+
+``End RTU``
+
 **VAV**
+
 
 *VAV* is the last item on the device list inside of *Device Configuration*.
 When *VAV* is selected, there will be a new selection of items to insert info. 
@@ -188,6 +323,7 @@ and the second one is *Consumer Market Name*.
 
 **Light**
 
+
 .. image:: _images/light_Agent.JPG
 
 Light will be the second item in the dropdown. Once *light* is selected
@@ -197,10 +333,11 @@ there will be a checkbox below the dropdown that says: *Enable Actuation On Star
    "true" in Json. When unchecked it will be considered "false".
 
 Below the checkbox, there are 2 more items: *Control Interval* and *Market Name*.
-Control interval will take in items of a float value, and Market Name will take in a 
+Control interval will take in items of a floating point precision value, and Market Name will take in a 
 string item. 
 
 **RTU**
+
 
 .. image:: _images/rtu_Agent.JPG
 
@@ -211,9 +348,9 @@ RTU is the third item in the dropdown selection list. This item, once selected, 
    "true" in Json. When unchecked it will be considered "false".
 
 Below the two checkboxes, there is an option called *Control Interval*. This takes in items of
-a float value.
+a floating point precision value.
 
-**VAV**
+**VAV** 
 
 .. image:: _images/vav_Agent.JPG
 
@@ -226,7 +363,7 @@ Underneath the device list, there is a checkbox to select called *Enable Actuati
 
 Below the checkbox, there are 3 items: *Control Interval*, *Market Name*, and *Actuation Method*.
 
-within *Control Interval*, it will take in an item of a float value. *Market Name* takes 
+within *Control Interval*, it will take in an item of a floating point precision value. *Market Name* takes 
 in a string. *Actuation Method* has an additional dropdown to choose from. 
 
 .. image:: _images/dropdown_Vav.JPG
@@ -268,7 +405,7 @@ The second example the topic will be: *METERS*
 .. image:: _images/points_2.JPG
 
 Below Points there is the tab: *Initial Value*.
-This tab will take in a float number as a value.
+This tab will take in a floating point precision number as a value.
 
 
 .. image:: _images/initial_Value.JPG
@@ -283,9 +420,6 @@ depending on the *Type* selected.
 Outputs
 *******
 
-
-**Topic**
-
 The *Outputs* page is the fifth page in the TCC application. Inside of the *Outputs* page the first thing
 is that, automatically, the first item there is is named *Output 0*. There is also the option to remove
 or reset this input as well.
@@ -294,6 +428,8 @@ In the top right of the *Outputs* page, there is a red button called *remove*. T
 will remove the selected input that you want to remove.
 
 .. image:: _images/remove.JPG
+
+**Topic**
 
 inside of *Topic* there is a dropdown list. The dropdown list will be determined based upon the 
 *Main Configuration File*. Once an option is chosen, different *Points* in the Points tab will be available based upon the 
@@ -327,12 +463,11 @@ Below the Type option there are various different tabs to configure.
 
 .. image:: _images/output_Options.JPG
 
-Each tab takes in a float value.
+Each tab takes in a floating point precision value.
 
 **Actuator**
 
-Actuator is displayed below the Output configuration tabs. This is hard coded into the 
-application so it cannot be changed.
+Actuator is displayed below the Output configuration tabs. This field is disabled by default.
 
 .. image:: _images/actuator.JPG
 
@@ -347,7 +482,7 @@ Schedule is the last page of the TCC application.
 .. image:: _images/schedule.JPG
 
 This page has every day of the week listed (mon-sun).
-on each tab there is a *Start* time, an *always on* button, an *always off*
+on each tab there is a *Start* time, an *Always on* button, an *Always off*
 button, and an *End* time.
 
 .. image:: _images/schedule_Ex.JPG
@@ -359,10 +494,10 @@ to select the correct time needed.
 
 .. image:: _images/clock_Schedule.JPG
 
-**Always off/on**
+**Always Off/On**
 
 The buttons for always off and always on determine which days of the week
-will be *Always on* or *Always off*.
+will be *Always On* or *Always Off*.
 
 .. Note:: When an icon is selected, and another is selected, the previous icon
    will return back to its previous state. They can both be off, but both cannot be on.
@@ -374,7 +509,7 @@ will be *Always on* or *Always off*.
 Settings
 ********
 
-**Dark Mode** : There is an option for this document to be used in dark mode. Click the *Contrast* icon on the top right corner of the page to toggle this option. 
+**Dark Mode** : There is an option for this document to be used in Dark mode. Click the *Contrast* icon on the top right corner of the page to toggle this option. 
 
 .. image:: _images/dark_Mode.JPG
 
