@@ -145,6 +145,8 @@ Item takes in a floating point precision based value.
 
 **Nominal Zone Set Point**
 
+Item takes in a floating point precision based value.
+
 .. image:: _images/nom_Set.JPG
 
 **Model Configuration**
@@ -157,7 +159,7 @@ Model Configuration is another option that will be available upon selection of t
 
 Item takes in a floating point precision based value.
 
-.. image:: _images/nom_Set.JPG
+.. image:: _images/cp_Air.JPG
 
 **COP**
 
@@ -214,7 +216,7 @@ Light is the second selection of the device list inside of *Device Configuration
 
 **Model Type** 
 
-Item takes in a floating point precision based value.
+Drop down that consists of two items: *Simple* and *Simple Profile**
 
 .. image:: _images/model_Type.JPG
 
@@ -223,6 +225,26 @@ Item takes in a floating point precision based value.
 Item takes in a floating point precision based value.
 
 .. image:: _images/rated_Power.JPG
+
+**Light Hourly Parameters File Upload**
+
+*Light Hourly Parameters File Upload* will allow a file to be uploaded into.
+
+.. image:: _images/rtu_Hourly.JPG
+
+.. Warning:: Light Hourly Parameters File Upload will only read .json or .csv files. 
+
+Once a file is uploaded, the results will be displayed in the json code on the right side of the 
+screen. 
+
+.. image:: _images/hourly_Paramupload.JPG
+
+.. Note:: The example used displays the results of a .json file. 
+
+The items within the file uploaded will be placed in their corresponding areas inside of the json code 
+on the right. 
+
+
 
 ``End Light``
 
@@ -285,15 +307,30 @@ When *VAV* is selected, there will be a new selection of items to insert info.
 
 .. image:: _images/vav.JPG
 
-The VAV will add a new drop down called Terminal Box Type. This will produce a list
-option of *CAV* or *VAV* within the dropdown.
+**Model Type**
 
-.. image:: _images/dropdown_Vav.JPG
+Drop down that consists of two items: *Simple* and *Simple Profile**
 
-The *VAV* Device Configuration will also allow an *Hourly Parameters File Upload*. This will be 
-located at the bottom of the page.
+.. image:: _images/model_Type.JPG
 
-.. image:: _images/vav_File.JPG
+**VAV Hourly Parameters File Upload**
+
+*VAV Hourly Parameters File Upload* will allow a file to be uploaded into.
+
+.. image:: _images/rtu_Hourly.JPG
+
+.. Warning:: VAV Hourly Parameters File Upload will only read .json or .csv files. 
+
+Once a file is uploaded, the results will be displayed in the json code on the right side of the 
+screen. 
+
+.. image:: _images/hourly_Paramupload.JPG
+
+.. Note:: The example used displays the results of a .json file. 
+
+The items within the file uploaded will be placed in their corresponding areas inside of the json code 
+on the right. 
+
 
 Agent Configuration
 *******************
@@ -316,25 +353,46 @@ depending on what is selected.
 
 When *AHU* is selected in Agent Configuration
 there will be 2 new options to input into.
-The first one is *Supplier Market Name*
-and the second one is *Consumer Market Name*.
 
-.. image:: _images/ahu_Agent.JPG
+
+**Supplier Market Name**
+
+Item that takes in a name of a *Supplier Market*
+
+.. image:: _images/supplier_Market.JPG
+
+
+**Consumer Market Name**
+
+Item that takes in a name of a *Consumer Market*.
+
+.. image:: _images/consumer_Market.JPG
+
+``End of AHU agent``
 
 **Light**
 
-
 .. image:: _images/light_Agent.JPG
 
-Light will be the second item in the dropdown. Once *light* is selected
-there will be a checkbox below the dropdown that says: *Enable Actuation On Start*.
+Light will be the second item in the dropdown. 
 
-.. Note:: This checkbox is represented as a boolean value. When checked it will be stored as 
-   "true" in Json. When unchecked it will be considered "false".
+**Enable Actuation On Start**.
 
-Below the checkbox, there are 2 more items: *Control Interval* and *Market Name*.
-Control interval will take in items of a floating point precision value, and Market Name will take in a 
-string item. 
+Input is a checkbox inside *Light*
+
+.. image:: _images/enable_Actuation.JPG
+
+**Control Interval**
+
+Item takes in a floating point precision based value.
+
+.. image:: _images/control_Interval.JPG
+
+**Market Name**
+
+Item that takes in a name of a *Market*
+
+.. image:: _images/marketname_Agent2.JPG
 
 **RTU**
 
@@ -344,11 +402,23 @@ string item.
 RTU is the third item in the dropdown selection list. This item, once selected, will place
 2 checkboxes below the list. The two checkboxes are *Enable Actuation On Start* and *TNS*. 
 
-.. Note:: These checkboxes are represented as a boolean value. When checked they will be stored as 
-   "true" in Json. When unchecked it will be considered "false".
+**Enable Actuation On**
 
-Below the two checkboxes, there is an option called *Control Interval*. This takes in items of
-a floating point precision value.
+Input is a checkbox inside *RTU*
+.. image:: _images/enable_Actuationrtu.JPG
+
+**TNS**
+
+Input is a checkbox inside *RTU*
+
+.. image:: _images/tns.JPG
+
+
+**Control Interval**
+
+This item takes in a floating point precision value.
+
+.. image:: _images/control_Interval2.JPG
 
 **VAV** 
 

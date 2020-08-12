@@ -126,6 +126,7 @@ if unchecked, it will be stored as “false”.</p>
 <p>Item takes in a floating point precision based value.</p>
 <img alt="_images/supply_Set.JPG" src="_images/supply_Set.JPG" />
 <p><strong>Nominal Zone Set Point</strong></p>
+<p>Item takes in a floating point precision based value.</p>
 <img alt="_images/nom_Set.JPG" src="_images/nom_Set.JPG" />
 <p><strong>Model Configuration</strong></p>
 <p>Model Configuration is another option that will be available upon selection of the
@@ -133,7 +134,7 @@ if unchecked, it will be stored as “false”.</p>
 <em>cpAir</em>, <em>COP</em>, <em>mDotAir</em>, <em>c0</em>, <em>c1</em>, <em>c2</em>, and <em>c3</em>.</p>
 <p><strong>cpAir</strong></p>
 <p>Item takes in a floating point precision based value.</p>
-<img alt="_images/nom_Set.JPG" src="_images/nom_Set.JPG" />
+<img alt="_images/cp_Air.JPG" src="_images/cp_Air.JPG" />
 <p><strong>COP</strong></p>
 <p>Item takes in a floating point precision based value.</p>
 <img alt="_images/cop.JPG" src="_images/cop.JPG" />
@@ -161,11 +162,27 @@ if unchecked, it will be stored as “false”.</p>
 <em>Light</em> consists of <em>Model Type</em> and <em>Rated Power</em>.</p>
 <img alt="_images/light.JPG" src="_images/light.JPG" />
 <p><strong>Model Type</strong></p>
-<p>Item takes in a floating point precision based value.</p>
+<p>Drop down that consists of two items: <em>Simple</em> and <em>Simple Profile*</em></p>
 <img alt="_images/model_Type.JPG" src="_images/model_Type.JPG" />
 <p><strong>Rated Power</strong></p>
 <p>Item takes in a floating point precision based value.</p>
 <img alt="_images/rated_Power.JPG" src="_images/rated_Power.JPG" />
+<p><strong>Light Hourly Parameters File Upload</strong></p>
+<p><em>Light Hourly Parameters File Upload</em> will allow a file to be uploaded into.</p>
+<img alt="_images/rtu_Hourly.JPG" src="_images/rtu_Hourly.JPG" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Light Hourly Parameters File Upload will only read .json or .csv files.</p>
+</div>
+<p>Once a file is uploaded, the results will be displayed in the json code on the right side of the
+screen.</p>
+<img alt="_images/hourly_Paramupload.JPG" src="_images/hourly_Paramupload.JPG" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The example used displays the results of a .json file.</p>
+</div>
+<p>The items within the file uploaded will be placed in their corresponding areas inside of the json code
+on the right.</p>
 <p><code class="docutils literal notranslate"><span class="pre">End</span> <span class="pre">Light</span></code></p>
 <p><strong>RTU</strong></p>
 <p><em>RTU</em> is the third selection of the device list inside of <em>Device Configuration</em>.
@@ -204,12 +221,25 @@ on the right.</p>
 <p><em>VAV</em> is the last item on the device list inside of <em>Device Configuration</em>.
 When <em>VAV</em> is selected, there will be a new selection of items to insert info.</p>
 <img alt="_images/vav.JPG" src="_images/vav.JPG" />
-<p>The VAV will add a new drop down called Terminal Box Type. This will produce a list
-option of <em>CAV</em> or <em>VAV</em> within the dropdown.</p>
-<img alt="_images/dropdown_Vav.JPG" src="_images/dropdown_Vav.JPG" />
-<p>The <em>VAV</em> Device Configuration will also allow an <em>Hourly Parameters File Upload</em>. This will be
-located at the bottom of the page.</p>
-<img alt="_images/vav_File.JPG" src="_images/vav_File.JPG" />
+<p><strong>Model Type</strong></p>
+<p>Drop down that consists of two items: <em>Simple</em> and <em>Simple Profile*</em></p>
+<img alt="_images/model_Type.JPG" src="_images/model_Type.JPG" />
+<p><strong>VAV Hourly Parameters File Upload</strong></p>
+<p><em>VAV Hourly Parameters File Upload</em> will allow a file to be uploaded into.</p>
+<img alt="_images/rtu_Hourly.JPG" src="_images/rtu_Hourly.JPG" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>VAV Hourly Parameters File Upload will only read .json or .csv files.</p>
+</div>
+<p>Once a file is uploaded, the results will be displayed in the json code on the right side of the
+screen.</p>
+<img alt="_images/hourly_Paramupload.JPG" src="_images/hourly_Paramupload.JPG" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The example used displays the results of a .json file.</p>
+</div>
+<p>The items within the file uploaded will be placed in their corresponding areas inside of the json code
+on the right.</p>
 </div>
 <div class="section" id="agent-configuration">
 <h3>Agent Configuration<a class="headerlink" href="#agent-configuration" title="Permalink to this headline">¶</a></h3>
@@ -223,33 +253,39 @@ depending on what is selected.</p>
 <p><strong>AHU</strong></p>
 <img alt="_images/ahu_Agent.JPG" src="_images/ahu_Agent.JPG" />
 <p>When <em>AHU</em> is selected in Agent Configuration
-there will be 2 new options to input into.
-The first one is <em>Supplier Market Name</em>
-and the second one is <em>Consumer Market Name</em>.</p>
-<img alt="_images/ahu_Agent.JPG" src="_images/ahu_Agent.JPG" />
+there will be 2 new options to input into.</p>
+<p><strong>Supplier Market Name</strong></p>
+<p>Item that takes in a name of a <em>Supplier Market</em></p>
+<img alt="_images/supplier_Market.JPG" src="_images/supplier_Market.JPG" />
+<p><strong>Consumer Market Name</strong></p>
+<p>Item that takes in a name of a <em>Consumer Market</em>.</p>
+<img alt="_images/consumer_Market.JPG" src="_images/consumer_Market.JPG" />
+<p><code class="docutils literal notranslate"><span class="pre">End</span> <span class="pre">of</span> <span class="pre">AHU</span> <span class="pre">agent</span></code></p>
 <p><strong>Light</strong></p>
 <img alt="_images/light_Agent.JPG" src="_images/light_Agent.JPG" />
-<p>Light will be the second item in the dropdown. Once <em>light</em> is selected
-there will be a checkbox below the dropdown that says: <em>Enable Actuation On Start</em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This checkbox is represented as a boolean value. When checked it will be stored as
-“true” in Json. When unchecked it will be considered “false”.</p>
-</div>
-<p>Below the checkbox, there are 2 more items: <em>Control Interval</em> and <em>Market Name</em>.
-Control interval will take in items of a floating point precision value, and Market Name will take in a
-string item.</p>
+<p>Light will be the second item in the dropdown.</p>
+<p><strong>Enable Actuation On Start</strong>.</p>
+<p>Input is a checkbox inside <em>Light</em></p>
+<img alt="_images/enable_Actuation.JPG" src="_images/enable_Actuation.JPG" />
+<p><strong>Control Interval</strong></p>
+<p>Item takes in a floating point precision based value.</p>
+<img alt="_images/control_Interval.JPG" src="_images/control_Interval.JPG" />
+<p><strong>Market Name</strong></p>
+<p>Item that takes in a name of a <em>Market</em></p>
+<img alt="_images/marketname_Agent2.JPG" src="_images/marketname_Agent2.JPG" />
 <p><strong>RTU</strong></p>
 <img alt="_images/rtu_Agent.JPG" src="_images/rtu_Agent.JPG" />
 <p>RTU is the third item in the dropdown selection list. This item, once selected, will place
 2 checkboxes below the list. The two checkboxes are <em>Enable Actuation On Start</em> and <em>TNS</em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>These checkboxes are represented as a boolean value. When checked they will be stored as
-“true” in Json. When unchecked it will be considered “false”.</p>
-</div>
-<p>Below the two checkboxes, there is an option called <em>Control Interval</em>. This takes in items of
-a floating point precision value.</p>
+<p><strong>Enable Actuation On</strong></p>
+<p>Input is a checkbox inside <em>RTU</em>
+.. image:: _images/enable_Actuationrtu.JPG</p>
+<p><strong>TNS</strong></p>
+<p>Input is a checkbox inside <em>RTU</em></p>
+<img alt="_images/tns.JPG" src="_images/tns.JPG" />
+<p><strong>Control Interval</strong></p>
+<p>This item takes in a floating point precision value.</p>
+<img alt="_images/control_Interval2.JPG" src="_images/control_Interval2.JPG" />
 <p><strong>VAV</strong></p>
 <img alt="_images/vav_Agent.JPG" src="_images/vav_Agent.JPG" />
 <p><em>VAV</em> is the last item on the list in <em>Devices</em> for the Agent Configuration page.</p>
