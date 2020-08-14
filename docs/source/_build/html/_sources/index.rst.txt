@@ -449,7 +449,7 @@ Item that takes in a name of a *Market*
 
 **Actuation Method** 
 
-has an additional dropdown to choose from. 
+Drop down that consists of two items: *Periodic* and *Market Clear*
 
 .. image:: _images/dropdown_Vav.JPG
 
@@ -458,11 +458,24 @@ Inputs
 
 *Inputs* is the fourth page in the TCC application. Inside of the *Inputs* page the first thing
 is that, automatically, the first input there is is named *Input 0*. There is also the option to remove
-or reset this input as well. In the top right of the *Inputs* page, there is a red button called *remove*. This 
+or reset this input as well.
+
+.. image:: _images/inputs.JPG
+
+
+**Add Input**
+
+The *Add Input* button is an item that allows the user to add another 
+*Input* to the page. Each Input is named by default. The first Input will automatically
+be named *Input 0*. The next: *Input 1*.. etc.
+
+.. image:: _images/inputs_Pageadd.JPG
+
+**Remove**
+In the top right of the *Inputs* page, there is a red button called *remove*. This 
 will remove the selected input that you want to remove.
 
 .. image:: _images/remove.JPG
-
 
 **Topic**
 
@@ -489,18 +502,27 @@ The second example the topic will be: *METERS*
 
 .. image:: _images/points_2.JPG
 
-Below Points there is the tab: *Initial Value*.
-This tab will take in a floating point precision number as a value.
+**Initial Value**
 
+This tab will take in a floating point precision number as a value.
 
 .. image:: _images/initial_Value.JPG
 
-The last tab of the *Inputs* page is *Type*. Type has an initial dropdown 
-which consists of *AHU*, *Light*, and *VAV*. Next to the Type part of the tab
-there is *mapped*. mapped will have a different selection inside the dropdown 
-depending on the *Type* selected.
+**Type**
 
-.. image:: _images/type_Inputs.JPG
+Type has a drop down of *AHU*, *Light*, and *VAV*.
+
+.. image:: _images/type_Inputspage.JPG
+
+.. image:: _images/type_Drop.JPG
+
+**Mapped**
+
+Once *Type* is selected, mapped will be an available drop down. 
+
+.. image:: _images/mapped.JPG
+
+.. image:: _images/mapped_Drop.JPG
 
 Outputs
 *******
