@@ -420,21 +420,36 @@ This item takes in a floating point precision value.
 
 .. image:: _images/control_Interval2.JPG
 
+
 **VAV** 
 
 .. image:: _images/vav_Agent.JPG
 
 *VAV* is the last item on the list in *Devices* for the Agent Configuration page. 
 
-Underneath the device list, there is a checkbox to select called *Enable Actuation On Start*.
+**Enable Actuation On Start**
 
-.. Note:: This checkbox is represented as a boolean value. When checked it will be stored as 
-   "true" in Json. When unchecked it will be considered "false".
+Input is a checkbox inside *VAV*
+.. image:: _images/enable_Actuationrtu.JPG
 
-Below the checkbox, there are 3 items: *Control Interval*, *Market Name*, and *Actuation Method*.
 
-within *Control Interval*, it will take in an item of a floating point precision value. *Market Name* takes 
-in a string. *Actuation Method* has an additional dropdown to choose from. 
+**Control Interval**
+
+This item takes in a floating point precision value.
+
+.. image:: _images/control_Interval2.JPG
+
+
+**Market Name**
+
+Item that takes in a name of a *Market*
+
+.. image:: _images/marketname_Agent2.JPG
+
+
+**Actuation Method** 
+
+has an additional dropdown to choose from. 
 
 .. image:: _images/dropdown_Vav.JPG
 
