@@ -479,12 +479,12 @@ will remove the selected input that you want to remove.
 
 **Topic**
 
-The first tab you will see in the *Inputs* page is *Topic*.
+The first input field you will see in the *Inputs* page is *Topic*.
 
 .. image:: _images/inputs_Page.JPG
 
 inside of *Topic* there is a dropdown list. The dropdown list will be determined based upon the 
-*Main Configuration File*. Once an option is chosen, different *Points* in the Points tab will be available based upon the 
+*Main Configuration File*. Once an option is chosen, different *Points* in the Points input field will be available based upon the 
 Topic chosen.
 
 **Point**
@@ -504,7 +504,7 @@ The second example the topic will be: *METERS*
 
 **Initial Value**
 
-This tab will take in a floating point precision number as a value.
+This input field will take in a floating point precision number as a value.
 
 .. image:: _images/initial_Value.JPG
 
@@ -524,6 +524,8 @@ Once *Type* is selected, mapped will be an available drop down.
 
 .. image:: _images/mapped_Drop.JPG
 
+``End of Inputs``
+
 Outputs
 *******
 
@@ -536,10 +538,30 @@ will remove the selected input that you want to remove.
 
 .. image:: _images/remove.JPG
 
+**Add Input**
+
+The *Add Input* button is an item that allows the user to add another 
+*Input* to the page. Each Input is named by default. The first Input will automatically
+be named *Input 0*. The next: *Input 1*.. etc.
+
+.. image:: _images/inputs_Pageadd.JPG
+
+
+**Remove**
+
+In the top right of the *Outputs* page, there is a red button called *remove*. This 
+will remove the selected input that you want to remove.
+
+.. image:: _images/remove.JPG
+
 **Topic**
 
+The first input field you will see in the *Outputs* page is *Topic*.
+
+.. image:: _images/inputs_Page.JPG
+
 inside of *Topic* there is a dropdown list. The dropdown list will be determined based upon the 
-*Main Configuration File*. Once an option is chosen, different *Points* in the Points tab will be available based upon the 
+*Main Configuration File*. Once an option is chosen, different *Points* in the Points input field will be available based upon the 
 Topic chosen.
 
 **Point**
@@ -564,17 +586,70 @@ Example: Topic is set to *METERS*
 Depending on the chosen type (*AHU*, *Light*, and *VAV*), the *Mapped* dropdown
 will defer.
 
+**Mapped**
+
+Once *Type* is selected, mapped will be an available drop down. 
+
+.. image:: _images/mapped.JPG
+
+.. image:: _images/mapped_Drop.JPG
+
+
+
+**Flexibility Range (High)**
+
+This item takes in a floating point precision value.
+
+.. image:: _images/flex_Range.JPG
+
+
+**Flexibility Range (Low)**
+
+This item takes in a floating point precision value.
+
+.. image:: _images/flex_Rangelow.JPG
+
+**Control Flexibility (High)** 
+
+This item takes in a floating point precision value.
+
+.. image:: _images/control_Flex.JPG
+
+**Control Flexibility (Low)**
+
+This item takes in a floating point precision value.
+
+.. image:: _images/control_Flexlow.JPG
+
+**Fallback**
+
+This item takes in a floating point precision value.
+
+.. image:: _images/fallback.JPG
+
+**Off Set Point**
+
+This item takes in a floating point precision value.
+
+.. image:: _images/off_Setpoint.JPG
+
+**Offset**
+
+This item takes in a floating point precision value.
+
+.. image:: _images/off_Setpoint.JPG
+
 **Output Configuration**
 
-Below the Type option there are various different tabs to configure.
+Below the Type option there are various different input fields to configure.
 
 .. image:: _images/output_Options.JPG
 
-Each tab takes in a floating point precision value.
+Each input field takes in a floating point precision value.
 
 **Actuator**
 
-Actuator is displayed below the Output configuration tabs. This field is disabled by default.
+Actuator is displayed below the Output configuration input fields. This field is disabled by default.
 
 .. image:: _images/actuator.JPG
 
@@ -589,14 +664,14 @@ Schedule is the last page of the TCC application.
 .. image:: _images/schedule.JPG
 
 This page has every day of the week listed (mon-sun).
-on each tab there is a *Start* time, an *Always on* button, an *Always off*
+on each input field there is a *Start* time, an *Always on* button, an *Always off*
 button, and an *End* time.
 
 .. image:: _images/schedule_Ex.JPG
 
 **Clock**
 
-When the *Start* and *End* tabs are selected, a pop up of a clock will appear
+When the *Start* and *End* input fields are selected, a pop up of a clock will appear
 to select the correct time needed.
 
 .. image:: _images/clock_Schedule.JPG

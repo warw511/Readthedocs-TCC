@@ -318,10 +318,10 @@ In the top right of the <em>Inputs</em> page, there is a red button called <em>r
 will remove the selected input that you want to remove.</p>
 <img alt="_images/remove.JPG" src="_images/remove.JPG" />
 <p><strong>Topic</strong></p>
-<p>The first tab you will see in the <em>Inputs</em> page is <em>Topic</em>.</p>
+<p>The first input field you will see in the <em>Inputs</em> page is <em>Topic</em>.</p>
 <img alt="_images/inputs_Page.JPG" src="_images/inputs_Page.JPG" />
 <p>inside of <em>Topic</em> there is a dropdown list. The dropdown list will be determined based upon the
-<em>Main Configuration File</em>. Once an option is chosen, different <em>Points</em> in the Points tab will be available based upon the
+<em>Main Configuration File</em>. Once an option is chosen, different <em>Points</em> in the Points input field will be available based upon the
 Topic chosen.</p>
 <p><strong>Point</strong></p>
 <p>Points change based on the topic that is selected.
@@ -333,7 +333,7 @@ platform.driver.store file.</p>
 <p>The second example the topic will be: <em>METERS</em></p>
 <img alt="_images/points_2.JPG" src="_images/points_2.JPG" />
 <p><strong>Initial Value</strong></p>
-<p>This tab will take in a floating point precision number as a value.</p>
+<p>This input field will take in a floating point precision number as a value.</p>
 <img alt="_images/initial_Value.JPG" src="_images/initial_Value.JPG" />
 <p><strong>Type</strong></p>
 <p>Type has a drop down of <em>AHU</em>, <em>Light</em>, and <em>VAV</em>.</p>
@@ -343,6 +343,7 @@ platform.driver.store file.</p>
 <p>Once <em>Type</em> is selected, mapped will be an available drop down.</p>
 <img alt="_images/mapped.JPG" src="_images/mapped.JPG" />
 <img alt="_images/mapped_Drop.JPG" src="_images/mapped_Drop.JPG" />
+<p><code class="docutils literal notranslate"><span class="pre">End</span> <span class="pre">of</span> <span class="pre">Inputs</span></code></p>
 </div>
 <div class="section" id="outputs">
 <h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
@@ -352,9 +353,20 @@ or reset this input as well.</p>
 <p>In the top right of the <em>Outputs</em> page, there is a red button called <em>remove</em>. This
 will remove the selected input that you want to remove.</p>
 <img alt="_images/remove.JPG" src="_images/remove.JPG" />
+<p><strong>Add Input</strong></p>
+<p>The <em>Add Input</em> button is an item that allows the user to add another
+<em>Input</em> to the page. Each Input is named by default. The first Input will automatically
+be named <em>Input 0</em>. The next: <em>Input 1</em>.. etc.</p>
+<img alt="_images/inputs_Pageadd.JPG" src="_images/inputs_Pageadd.JPG" />
+<p><strong>Remove</strong></p>
+<p>In the top right of the <em>Outputs</em> page, there is a red button called <em>remove</em>. This
+will remove the selected input that you want to remove.</p>
+<img alt="_images/remove.JPG" src="_images/remove.JPG" />
 <p><strong>Topic</strong></p>
+<p>The first input field you will see in the <em>Outputs</em> page is <em>Topic</em>.</p>
+<img alt="_images/inputs_Page.JPG" src="_images/inputs_Page.JPG" />
 <p>inside of <em>Topic</em> there is a dropdown list. The dropdown list will be determined based upon the
-<em>Main Configuration File</em>. Once an option is chosen, different <em>Points</em> in the Points tab will be available based upon the
+<em>Main Configuration File</em>. Once an option is chosen, different <em>Points</em> in the Points input field will be available based upon the
 Topic chosen.</p>
 <p><strong>Point</strong></p>
 <p>Points change based on the topic that is selected.
@@ -369,12 +381,37 @@ platform.driver.store file.</p>
 <img alt="_images/type_Outputs.JPG" src="_images/type_Outputs.JPG" />
 <p>Depending on the chosen type (<em>AHU</em>, <em>Light</em>, and <em>VAV</em>), the <em>Mapped</em> dropdown
 will defer.</p>
+<p><strong>Mapped</strong></p>
+<p>Once <em>Type</em> is selected, mapped will be an available drop down.</p>
+<img alt="_images/mapped.JPG" src="_images/mapped.JPG" />
+<img alt="_images/mapped_Drop.JPG" src="_images/mapped_Drop.JPG" />
+<p><strong>Flexibility Range (High)</strong></p>
+<p>This item takes in a floating point precision value.</p>
+<img alt="_images/flex_Range.JPG" src="_images/flex_Range.JPG" />
+<p><strong>Flexibility Range (Low)</strong></p>
+<p>This item takes in a floating point precision value.</p>
+<img alt="_images/flex_Rangelow.JPG" src="_images/flex_Rangelow.JPG" />
+<p><strong>Control Flexibility (High)</strong></p>
+<p>This item takes in a floating point precision value.</p>
+<img alt="_images/control_Flex.JPG" src="_images/control_Flex.JPG" />
+<p><strong>Control Flexibility (Low)</strong></p>
+<p>This item takes in a floating point precision value.</p>
+<img alt="_images/control_Flexlow.JPG" src="_images/control_Flexlow.JPG" />
+<p><strong>Fallback</strong></p>
+<p>This item takes in a floating point precision value.</p>
+<img alt="_images/fallback.JPG" src="_images/fallback.JPG" />
+<p><strong>Off Set Point</strong></p>
+<p>This item takes in a floating point precision value.</p>
+<img alt="_images/off_Setpoint.JPG" src="_images/off_Setpoint.JPG" />
+<p><strong>Offset</strong></p>
+<p>This item takes in a floating point precision value.</p>
+<img alt="_images/off_Setpoint.JPG" src="_images/off_Setpoint.JPG" />
 <p><strong>Output Configuration</strong></p>
-<p>Below the Type option there are various different tabs to configure.</p>
+<p>Below the Type option there are various different input fields to configure.</p>
 <img alt="_images/output_Options.JPG" src="_images/output_Options.JPG" />
-<p>Each tab takes in a floating point precision value.</p>
+<p>Each input field takes in a floating point precision value.</p>
 <p><strong>Actuator</strong></p>
-<p>Actuator is displayed below the Output configuration tabs. This field is disabled by default.</p>
+<p>Actuator is displayed below the Output configuration input fields. This field is disabled by default.</p>
 <img alt="_images/actuator.JPG" src="_images/actuator.JPG" />
 <p>Below the Actuator, there is a dropdown to chose from. The dropdown will
 give a list between <em>default</em> and <em>None</em>.</p>
@@ -384,11 +421,11 @@ give a list between <em>default</em> and <em>None</em>.</p>
 <p>Schedule is the last page of the TCC application.</p>
 <img alt="_images/schedule.JPG" src="_images/schedule.JPG" />
 <p>This page has every day of the week listed (mon-sun).
-on each tab there is a <em>Start</em> time, an <em>Always on</em> button, an <em>Always off</em>
+on each input field there is a <em>Start</em> time, an <em>Always on</em> button, an <em>Always off</em>
 button, and an <em>End</em> time.</p>
 <img alt="_images/schedule_Ex.JPG" src="_images/schedule_Ex.JPG" />
 <p><strong>Clock</strong></p>
-<p>When the <em>Start</em> and <em>End</em> tabs are selected, a pop up of a clock will appear
+<p>When the <em>Start</em> and <em>End</em> input fields are selected, a pop up of a clock will appear
 to select the correct time needed.</p>
 <img alt="_images/clock_Schedule.JPG" src="_images/clock_Schedule.JPG" />
 <p><strong>Always Off/On</strong></p>
