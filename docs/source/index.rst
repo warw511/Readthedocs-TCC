@@ -15,10 +15,12 @@ TCC Web Application: User Guide
 Introduction
 ************
 
+The TCC configuration tool is used to create a TCC configuration store for use in VOLTTRON. The configuration store content being created will be shown in the viewing pane on the right side of the application. 
+
 *****************************
 TCC Application Configuration
 *****************************
-**!This doc is a test for creating a user guide. Edit this out when entire doc draft is finished.!**
+
 
 The TCC application behavior is controlled through these
 configuration Pages:
